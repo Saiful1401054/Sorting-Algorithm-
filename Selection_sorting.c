@@ -1,17 +1,14 @@
 
 #include <stdio.h>
-
-int main()
-{
+int main(){
        int i, j, n, temp, a[25];
-
-   printf("size of array :\n ");
+       
+   printf("The size of array :\n ");
    scanf("%d",&n);
 
    printf("Enter %d elements: ", n);
- 
    for(i=0;i<n;i++)
-      scanf("%d",&a[i]);
+   scanf("%d",&a[i]);
    for(i=0;i<n;i++){
       for(j=i+1;j<n;j++){
          if(a[i]>a[j]){
@@ -21,10 +18,8 @@ int main()
          }
       }
    }
-
    printf("Sorted elements: ");
    for(i=0;i<n;i++)
       printf(" %d",a[i]);
-
     return 0;
 }
