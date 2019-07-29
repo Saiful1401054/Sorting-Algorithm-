@@ -1,15 +1,13 @@
 #include <stdio.h>
+int main(){
+int i, j, n, temp, a[25];
 
-int main()
-{
-       int i, j, n, temp, a[25];
+printf("the size of array :\n ");
+scanf("%d",&n);
 
-   printf("the size of array :\n ");
-   scanf("%d",&n);
-
-   printf("Enter %d elements: ", n);
-   for(i=0;i<n;i++)
-      scanf("%d",&a[i]);
+printf("Enter %d elements: ", n);
+for(i=0;i<n;i++)
+     scanf("%d",&a[i]);
       
    for(i=0;i<n-1;i++){
       for(j=0;j<n-i;j++){
@@ -20,10 +18,7 @@ int main()
          }
       }
    }
-
    printf("Sorted elements: ");
    for(j=0;j<n;j++)
       printf(" %d",a[j]);
-
-   
 }
